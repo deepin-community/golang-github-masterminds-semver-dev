@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+b2fa1edf08e5addab9efc75d2482f2d985e314c8
+b2fa1edf08e5addab9efc75d2482f2d985e314c8
+b2fa1edf08e5addab9efc75d2482f2d985e314c8
+b2fa1edf08e5addab9efc75d2482f2d985e314c8
+golang-github-masterminds-semver-dev_1.3.1.orig.tar.gz
+67cc746dd8d299ab0e1adbf7fc04453a75c1b917
+15740
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"
