@@ -1,15 +1,31 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-masterminds-semver-dev
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: ChangZhuo Chen (陳昌倬) <czchen@debian.org>,
+           Vincent Bernat <bernat@debian.org>,
+           Anthony Fok <foka@debian.org>
+Section: golang
+Testsuite: autopkgtest-pkg-go
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any
+Standards-Version: 4.6.2
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-masterminds-semver-dev
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-masterminds-semver-dev.git
+Homepage: https://github.com/Masterminds/semver
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/Masterminds/semver
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-masterminds-semver-dev
+Architecture: all
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Multi-Arch: foreign
+Description: Semantic versions library in Go
+ The semver package provides the ability to work with Semantic Versions
+ in Go. Specifically it provides the ability to:
+ .
+  * Parse semantic versions
+  * Sort semantic versions
+  * Check if a semantic version fits within a set of constraints
+  * Optionally work with a v prefix
